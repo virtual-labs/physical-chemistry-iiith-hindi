@@ -13,9 +13,9 @@ RUN apt-get update
 # Usage: Installing dependencies for computer graphics lab
 RUN apt-get install -y make php5 apache2 rsync
 
-RUN mkdir /physical-chemistry-iiith
+RUN mkdir /physical-chemistry-iiith               //Creating the specified folder
 
-COPY src/ /physical-chemistry-iiith/src
+COPY src/ /physical-chemistry-iiith/src           //Copying the file
 
 WORKDIR ./physical-chemistry-iiith/src
 
